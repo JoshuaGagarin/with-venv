@@ -38,9 +38,6 @@ body {
     overflow: hidden; 
     position: absolute;
     bottom: 30px;
-    /* display: none; */
-    /* transition: .5s,height .5s, width .5s ; */
-    /* transition-delay: 1s,0.5s,0.5s; */
     z-index: -1;
     transition-timing-function:cubic-bezier(0.075,.82,.165,1);
 }
@@ -50,7 +47,6 @@ body {
     width: 390px;
     z-index: 1;
     transform: translateY(-100px);
-    /* transition-delay: 0s,0.5s,0.5s; */
 
 }
 
@@ -64,7 +60,6 @@ body {
     top: 50%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
-    /* transition: .5s; */
 }
 
 .container .top-part {
@@ -118,7 +113,7 @@ cursor: pointer;
 }
 
 .left-part  {
-    margin: 60px 0;
+    margin: 60px 0; 
     max-width: 260px;
 }
 .agent-chart {
@@ -156,9 +151,7 @@ cursor: pointer;
     background: #0f0f20;
     padding: 8px 24px;
     border-radius: 10px;
-    /* margin-bottom: 10px; */
     text-align: center;
-    /* width: 10px; */
     margin: 0 0px 10px 0px;
 }
 

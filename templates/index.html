@@ -31,23 +31,17 @@
                          <p>Hey! Is there any question?</p>
                         </div>
                     </div>
-                    <!-- <div class="right-part">
-                        <p>Hello</p>
-                        <span>20m ago</span>
-                    </div> -->
                 </div>
                 <div id="taskList" class="chart-section">
-                    {% for task in todos %}
+                    {% for task, response in zip(todos, responses) %}
                     <div class="right-part">
-                        <!-- <p>Lorem impsum dolor sit amet consectetur dipidcsing elit dicta cumpoes volijuaras</p> -->
                         <p class="task">{{task}}</p>
                         <span>Just now Not Seen Yet.</span>
                     </div>
                     <div class="left-part">
                         <div class="agent-chart">
                             <img src="{{ url_for('static', filename='support-logo.png') }}" alt="">
-                            <!-- <p class="task">{{task}}</p> -->
-                            <p>Lorem</p>
+                            <p>{{response}}</p>
                         </div>
                     </div>
                     {% endfor %}
@@ -59,12 +53,6 @@
                     <input type="text" id="inputValue" name="inputValue" required>
                     <button type="submit"><i class='bx bxs-send'></i></button>
                 </form>
-                <!-- <form action="/run-function" method="POST">
-                    <textarea name="name" id="name" cols="30" rows="10" placeholder="Send a Message"></textarea>
-                    <button>
-                        <i class='bx bxs-send'></i>
-                    </button>
-                </form> -->
             </div>
             </div>
         </div>
