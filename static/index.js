@@ -6,11 +6,11 @@ const menuToggle=document.querySelector('.menuToggle');
         menuToggle.classList.toggle('active')
     }
 
-    
-
     if (localStorage.getItem('isActive') === 'true') {
         menuToggle.classList.toggle('active');
-        
+        const input = document.getElementById('inputValue');
+            input.focus();
+      
     }
     
 const closeContainer = document.querySelector('.closeContainer');
@@ -20,9 +20,26 @@ const closeContainer = document.querySelector('.closeContainer');
 
     function scrollToBottom() {
         console.log("hello");
-        const container = document.getElementById('bayot');
+        const container = document.getElementById('secondary-div');
         container.scrollTop = container.scrollHeight;
     }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+
+        scrollToBottom();
+    
+        const form = document.getElementById('myForm');
+        const input = document.getElementById('inputValue');
+    
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            // Perform form submission logic here
+    
+            // Refocus on the input field
+            input.value = ''; // Clear the input field if needed
+            input.focus();
+        });
+});
 
 
 document.getElementById('myForm').addEventListener('submit', function(event) {
@@ -56,6 +73,4 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     .catch(error => console.error('Error:', error));
 });
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    scrollToBottom();
-});
+

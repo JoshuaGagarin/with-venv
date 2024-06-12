@@ -1,0 +1,7 @@
+  {
+        "greet": "Hello there...!",
+        "goodbye": "Bye see you later",
+        "return-policy": "Our return policy allows you to return items within 30 days of purchase. Items must be unworn, unwashed, and in their original condition with tags attached.",
+        "start-return": "To start a return, you can visit our returns page [link to returns page]. You'll need your order number and the email address used for the purchase. Follow the instructions provided, and you'll receive a return label to send the item back to us.",
+        "store-hours" : "We are open from 8am to 5pm, Monday to Friday"
+    }

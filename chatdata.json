@@ -1,0 +1,87 @@
+{
+    "greet": [
+        "hi",
+        "hello",
+        "hey",
+        "hola"
+    ],
+    "goodbye": [
+        "bye",
+        "goodbye",
+        "byegood"
+    ],
+    "return-policy" : [
+        "return",
+        "policy"
+    ],
+
+    "start-return": [
+        "return",
+        "start"
+        
+    ],
+
+    "store-hours": [
+       "hours",
+       "time",
+       "open"
+    ],
+
+    "order-tracking": [
+        "track",
+        "order"
+     ],
+    
+    "payment-method": [
+        "payment",
+        "method",
+        "mode"
+     ],
+
+    "size-guide": [
+        "size",
+        "guide",
+        "sizing"
+     ],
+
+    "shipping-cost": [
+        "shipping",
+        "cost"
+     ],
+
+    "discount-codes": [
+        "discount",
+        "discounts",
+        "codes",
+        "promotions",
+        "promo",
+        "promotion",
+        "offer",
+        "offers"
+     ],
+
+    "store-location": [
+        "store",
+        "location",
+        "located",
+        "physical"
+     ],
+
+    "customer-support": [
+        "customer",
+        "support",
+        "contact",
+        "number"
+     ],
+
+     "thank-you": [
+        "thank",
+        "thanks"
+     ],
+    
+     "delivery": [
+        "delivery",
+        "deliver"
+     ]
+}
+
