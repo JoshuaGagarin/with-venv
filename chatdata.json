@@ -1,23 +1,34 @@
 {
-    "greet": [
+    "hi": [
         "hi",
-        "hello",
         "hey",
+        "up"
+    ],
+
+    "ask" : [
+        "ask",
+        "something"
+     ],
+
+    "hello" : [
+        "hello",
         "hola"
     ],
+
     "goodbye": [
         "bye",
         "goodbye",
         "byegood"
     ],
     "return-policy" : [
-        "return",
-        "policy"
+        "policy",
+        "return"
     ],
 
     "start-return": [
         "return",
-        "start"
+        "start",
+        "returning"
         
     ],
 
@@ -28,25 +39,26 @@
     ],
 
     "order-tracking": [
-        "track",
-        "order"
+        "track"
      ],
     
     "payment-method": [
         "payment",
         "method",
-        "mode"
+        "mode",
+        "pay"
      ],
 
     "size-guide": [
+        "sizing",
         "size",
-        "guide",
-        "sizing"
+        "guide"
      ],
 
     "shipping-cost": [
         "shipping",
-        "cost"
+        "cost",
+        "how much"
      ],
 
     "discount-codes": [
@@ -57,21 +69,23 @@
         "promo",
         "promotion",
         "offer",
-        "offers"
-     ],
+        "offers",
+        "i would like to know more about your promotions"
+        ],
 
     "store-location": [
-        "store",
         "location",
         "located",
-        "physical"
+        "physical",
+        "address"
      ],
 
     "customer-support": [
         "customer",
         "support",
         "contact",
-        "number"
+        "number",
+        "person"
      ],
 
      "thank-you": [
@@ -82,6 +96,32 @@
      "delivery": [
         "delivery",
         "deliver"
+     ],
+
+     "okay": [
+        "okay"
+     ],
+
+     "help" : [
+        "help"
+     ],
+    
+     "how-are-you" : [
+        "how are you",
+        "going",
+        "doing"
+     ],
+
+     "bored" : [
+        "bored",
+        "boring"
+     ],
+
+     "more-info" : [
+        "information",
+        "info"
      ]
+     
+     
 }
 

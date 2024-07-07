@@ -180,10 +180,11 @@ cursor: pointer;
 }
 
 .bottom-section form {
-    width: 90%;
+    width: 100%;
+    margin-right: 20px;
 }
 
-.bottom-section form textarea {
+.bottom-section form input {
     height: 40px;
     width: 80%;
     color: #0f0f20;
@@ -192,5 +193,13 @@ cursor: pointer;
     outline: none;
     border: none;
     overflow-y: hidden;
+    padding-left: 20px;
 }
 
+.button {
+    border: none;
+    background: #fff ;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+}
