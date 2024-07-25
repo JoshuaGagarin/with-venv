@@ -19,7 +19,6 @@ const closeContainer = document.querySelector('.closeContainer');
     }
 
     function scrollToBottom() {
-        console.log("hello");
         const container = document.getElementById('secondary-div');
         container.scrollTop = container.scrollHeight;
     }
@@ -27,18 +26,18 @@ const closeContainer = document.querySelector('.closeContainer');
 document.addEventListener('DOMContentLoaded', (event) => {
 
         scrollToBottom();
-    
+        menuToggle.classList.toggle('active')
         const form = document.getElementById('myForm');
         const input = document.getElementById('inputValue');
     
         form.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent actual form submission
             // Perform form submission logic here
-    
+            console.log("Hello workd")
             // Refocus on the input field
             input.value = ''; // Clear the input field if needed
-            input.focus();
         });
+        input.focus();
 });
 
 

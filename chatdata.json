@@ -2,13 +2,10 @@
     "hi": [
         "hi",
         "hey",
-        "up"
+        "hola",
+        "ahoy",
+        "yo"
     ],
-
-    "ask" : [
-        "ask",
-        "something"
-     ],
 
     "hello" : [
         "hello",
@@ -28,37 +25,60 @@
     "start-return": [
         "return",
         "start",
-        "returning"
+        "returning",
+        "item",
+        "refund",
+        "exchange"
         
     ],
 
     "store-hours": [
        "hours",
        "time",
-       "open"
+       "open",
+       "Opening",
+       "Closing",
+       "Schedule",
+       "Operation"
     ],
 
     "order-tracking": [
-        "track"
+        "track",
+        "Status",
+        "Transit",
+        "package"
      ],
     
     "payment-method": [
         "payment",
         "method",
         "mode",
-        "pay"
+        "pay",
+        "Cash",
+        "Card",
+        "Debit",
+        "Bank"
      ],
 
     "size-guide": [
         "sizing",
         "size",
-        "guide"
+        "guide",
+        "measurement",
+        "Fit",
+        "chart",
+        "dimensions",
+        "height",
+        "width"
      ],
 
     "shipping-cost": [
         "shipping",
         "cost",
-        "how much"
+        "how much",
+        "rate",
+        "charge",
+        "fee"
      ],
 
     "discount-codes": [
@@ -69,8 +89,7 @@
         "promo",
         "promotion",
         "offer",
-        "offers",
-        "i would like to know more about your promotions"
+        "offers"
         ],
 
     "store-location": [
@@ -85,7 +104,11 @@
         "support",
         "contact",
         "number",
-        "person"
+        "person",
+        "assistance",
+        "service",
+        "helpdesk",
+        "hotline"
      ],
 
      "thank-you": [
@@ -95,7 +118,9 @@
     
      "delivery": [
         "delivery",
-        "deliver"
+        "deliver",
+        "shipment",
+        "transport"
      ],
 
      "okay": [

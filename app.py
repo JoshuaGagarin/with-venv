@@ -63,7 +63,7 @@ def botanswer(q):
     prob = rnn.predict_proba(process_text)[0]
     max_ = np.argmax(prob)
 
-    if prob[max_] <= 0.45: #Only 60% and above accurate
+    if prob[max_] <= 0.2: #Only 60% and above accurate
         response_list.append("Sorry I am not getting you...!")
         return "Sorry I am not getting you...!"
     else:

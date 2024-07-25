@@ -1,5 +1,5 @@
 body {
-    background-color: #0f0f20;
+    background-color: white; /* #0f0f20 */
     color: white
 }
 
@@ -33,6 +33,7 @@ body {
     height: 30px;
     width: 30px;
     border: 3px solid rgba(225,225,225,.5);
+    border-color: black;
     border-radius: 20px;
     background: #fff;
     overflow: hidden; 
@@ -128,7 +129,7 @@ cursor: pointer;
 }
 
 .left-part p {
-    color: #555;
+    color: black; /*#555*/
     font-weight: 400;
     font-size: 14px;
     background: rgba(0,0,0,.1);
@@ -156,7 +157,7 @@ cursor: pointer;
 }
 
 .chart-section .right-part span {
-    color: #555;
+    color: black; /*#555*/
     font-size: 11px;
     font-weight: 500;
     display: none;
