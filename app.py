@@ -284,5 +284,13 @@ def botanswer(q):
 # def index():
 #     return "Hello World!"
 
+@app.route('/add', methods=['POST'])
+def add_todo():
+    task = request.form.get('task')
+    if task:
+        chat_list.append(task)
+        botanswer(task)
+    return jsonify({'status': 'success'})
+
 def home():
     return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
