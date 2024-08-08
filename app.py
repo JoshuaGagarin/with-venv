@@ -283,6 +283,8 @@ def botanswer(q):
 @app.route("/")
 # def index():
 #     return "Hello World!"
+def home():
+    return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
 
 @app.route('/add', methods=['POST'])
 def add_todo():
@@ -291,6 +293,3 @@ def add_todo():
         chat_list.append(task)
         botanswer(task)
     return jsonify({'status': 'success'})
-
-def home():
-    return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
