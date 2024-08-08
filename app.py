@@ -242,6 +242,32 @@ chat_list = []
 response_list = []
 app = Flask(__name__)
 
+training_dict = {}
+
+for intent, question_list in chat_data.items(): #chat_data.items()
+    
+   for question in question_list:
+     training_dict[question] = intent
+ 
+
+# Separating Features i.e questions and Labels i.e intents
+feature =np.array(list(training_dict.keys()))
+labels = np.array(list(training_dict.values()))
+feature, labels
+# WordVecotr with TF-IDF
+from sklearn.feature_extraction.text import TfidfVectorizer
+# Converting text to WordVector
+tf_vec = TfidfVectorizer().fit(feature)
+X = tf_vec.transform(feature).toarray()
+# Reshaping labels to fit data
+y = labels.reshape(-1)
+
+# Classifier
+from sklearn.ensemble import RandomForestClassifier
+# Fitting model
+rnn = RandomForestClassifier(n_estimators=200)
+rnn.fit(X, y)
+
 @app.route("/")
 # def index():
 #     return "Hello World!"
