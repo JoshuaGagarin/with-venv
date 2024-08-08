@@ -268,6 +268,18 @@ from sklearn.ensemble import RandomForestClassifier
 rnn = RandomForestClassifier(n_estimators=200)
 rnn.fit(X, y)
 
+def botanswer(q):
+    process_text = tf_vec.transform([q]).toarray()
+    prob = rnn.predict_proba(process_text)[0]
+    max_ = np.argmax(prob)
+
+    if prob[max_] <= 0.6: #Only 60% and above accurate
+        response_list.append("Sorry, I don't have much information about your query...")
+        return "Sorry I am not getting you...!"
+    else:
+        response_list.append(response_dict[rnn.classes_[max_]])
+        return response_dict[rnn.classes_[max_]]
+
 @app.route("/")
 # def index():
 #     return "Hello World!"
