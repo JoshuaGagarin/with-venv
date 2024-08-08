@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, jsonify
 import numpy as np
 
-
+chat_list = []
+response_list = []
 app = Flask(__name__)
 
 @app.route("/")
