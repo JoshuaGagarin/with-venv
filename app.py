@@ -293,3 +293,6 @@ def add_todo():
         chat_list.append(task)
         botanswer(task)
     return jsonify({'status': 'success'})
+
+if __name__ == '__main__':
+app.run(debug=True)
