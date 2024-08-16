@@ -291,7 +291,7 @@ def add_todo():
 
 @app.route("/")
 def home():
-  print("World")
+    print("World")
     return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
 
 if __name__ == '__main__':
