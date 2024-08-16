@@ -63,9 +63,6 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
             taskList.appendChild(newTaskItem)
             // location.reload();
             // window.location.href = "/";
-            setTimeout(() => {
-                location.reload();
-            }, 2000);
             
         }
     })

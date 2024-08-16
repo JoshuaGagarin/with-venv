@@ -287,14 +287,13 @@ def botanswer(q):
         return response_dict[rnn.classes_[max_]]
 
 
-  
+print(chat_list)
 
 @app.route('/add', methods=['POST'])
 def add_todo():
     task = request.form.get('task')
     if task:
         chat_list.append(task)
-        print(chat_list)
         botanswer(task)
     return jsonify({'status': 'success'})
 
