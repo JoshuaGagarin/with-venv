@@ -290,12 +290,7 @@ def add_todo():
 
 @app.route("/")
 def home():
-    items = chat_list.query.all()
-    itemses = response_list.query.all()
-    print(items)
-    print(itemses)
-    return render_template('index.html',todos=items, responses=itemses, zip=zip)
-    # return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
+    return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
 
 if __name__ == '__main__':
   app.run(debug=True)
