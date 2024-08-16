@@ -292,6 +292,8 @@ def add_todo():
 def home():
     items = request.form.getlist('chat_list')
     itemses = request.form.getlist('response_list')
+    print(items)
+    print(itemses)
     return render_template('index.html',todos=items, responses=itemses, zip=zip)
     # return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
 
