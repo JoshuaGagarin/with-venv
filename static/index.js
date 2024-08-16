@@ -62,8 +62,14 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
             newTaskItem.textContent = taskInput;
             taskList.appendChild(newTaskItem)
             // document.getElementById('taskInput').value = ''; // Clear input field
-            // window.location.href = "/";
-            location.reload(); 
+            // winocadow.ltion.href = "/";
+            function reload() {
+                location.reload(); 
+            }
+            
+            // Delay the execution of sayHello by 2 seconds (2000 milliseconds)
+            reload(sayHello, 2000);
+            
             // scrollToBottom();
 
             // localStorage.setItem('isActive', 'true');
