@@ -293,7 +293,6 @@ def add_todo():
     if task:
         chat_list.append(task)
         botanswer(task)
-        time.sleep(3)
     return jsonify({'status': 'success'})
 
 @app.route("/")
