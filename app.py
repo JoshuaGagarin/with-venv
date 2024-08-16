@@ -291,10 +291,10 @@ def botanswer(q):
 def add_todo():
     task = request.form.get('task')
     if task:
-        chat_list.append(task)
+        chat_list.extend(task) #should be .append not extend
         print(chat_list)
         # botanswer(task) # turned this off 
-        return jsonify({'status': 'success'}) #should be aligned in "if"
+    return jsonify({'status': 'success'})
 
 @app.route("/")
 def home():
