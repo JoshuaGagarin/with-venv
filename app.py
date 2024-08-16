@@ -280,12 +280,6 @@ def botanswer(q):
         response_list.append(response_dict[rnn.classes_[max_]])
         return response_dict[rnn.classes_[max_]]
 
-@app.route("/")
-# def index():
-#     return "Hello World!"
-def home():
-    return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
-
 @app.route('/add', methods=['POST'])
 def add_todo():
     task = request.form.get('task')
@@ -293,6 +287,10 @@ def add_todo():
         chat_list.append(task)
         botanswer(task)
     return jsonify({'status': 'success'})
+
+@app.route("/")
+def home():
+    return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
 
 if __name__ == '__main__':
   app.run(debug=True)

@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         form.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent actual form submission
             // Perform form submission logic here
-            console.log("Hello workd")
             // Refocus on the input field
             input.value = ''; // Clear the input field if needed
         });
@@ -61,8 +60,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
             var newTaskItem = document.createElement('p');
             newTaskItem.classList.add('task');
             newTaskItem.textContent = taskInput;
-            taskList.appendChild(newTaskItem);
-            console.log(newTaskItem)
+            taskList.appendChild(newTaskItem)
             // document.getElementById('taskInput').value = ''; // Clear input field
             // window.location.href = "/";
             location.reload(); 
