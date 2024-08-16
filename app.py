@@ -289,7 +289,7 @@ def add_todo():
     return jsonify({'status': 'success'})
 
 print (chat_list)
-print(response_list)
+print("hello")
 
 @app.route("/")
 def home():
