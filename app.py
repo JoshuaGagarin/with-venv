@@ -240,8 +240,7 @@ response_dict =  ( # (response[0])
 
 chat_list = []
 response_list = []
-print(chat_list)
-print(response_list)
+print("HELLO WORLD")
 app = Flask(__name__)
 
 training_dict = {}
