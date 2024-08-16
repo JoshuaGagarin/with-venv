@@ -288,9 +288,6 @@ def add_todo():
         botanswer(task)
     return jsonify({'status': 'success'})
 
-print(chat_list)
-print("hello")
-
 @app.route("/")
 def home():
     return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
