@@ -275,6 +275,7 @@ response_list = []
 # response_leest = ["Civic", "nmax", "GSX-r", "ninja400", "vios", "mirage"]
 
 def botanswer(q):
+    print(q) # for testing only
     process_text = tf_vec.transform([q]).toarray()
     prob = rnn.predict_proba(process_text)[0]
     max_ = np.argmax(prob)
@@ -291,14 +292,12 @@ def botanswer(q):
 def add_todo():
     task = request.form.get('task')
     if task:
-        chat_list.extend(task) #should be .append not extend
-        print(chat_list)
-        # botanswer(task) # turned this off 
+        chat_list.append(task) 
+        botanswer(task)
     return jsonify({'status': 'success'})
 
 @app.route("/")
 def home():
-   # return render_template('index.html',todos=chat_leest, responses=response_leest, zip=zip)
     return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
 
 if __name__ == '__main__':
