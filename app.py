@@ -290,9 +290,9 @@ def botanswer(q):
 @app.route('/add', methods=['POST'])
 def add_todo():
     task = request.form.get('task')
+    print(task)
     if task:
         chat_list.append(task)
-        print(chat_list)
         # botanswer(task) # turned this off 
     return jsonify({'status': 'success'})
 
@@ -303,4 +303,3 @@ def home():
 
 if __name__ == '__main__':
   app.run(debug=True)
-  
