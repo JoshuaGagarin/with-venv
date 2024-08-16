@@ -293,7 +293,7 @@ def add_todo():
     if task:
         chat_list.append(task)
         print(chat_list)
-        # botanswer(task)
+        # botanswer(task) # turned this off 
     return jsonify({'status': 'success'})
 
 @app.route("/")
