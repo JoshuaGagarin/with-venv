@@ -271,8 +271,6 @@ rnn.fit(X, y)
 
 chat_list = []
 response_list = []
-# chat_leest = ["Honda", "yamaha", "suzuki", "kawasaki", "Toyota","Mitsubishi"] 
-# response_leest = ["Civic", "nmax", "GSX-r", "ninja400", "vios", "mirage"]
 
 def botanswer(q):
     process_text = tf_vec.transform([q]).toarray()
@@ -293,7 +291,6 @@ def add_todo():
     if task:
         chat_list.append(task) 
         botanswer(task)
-        print(response_list)
     return jsonify({'status': 'success'})
 
 @app.route("/")
