@@ -271,8 +271,8 @@ rnn.fit(X, y)
 
 chat_list = []
 response_list = []
-chat_leest = ["Honda", "yamaha", "suzuki", "kawasaki", "Toyota","Mitsubishi"] #this is the latest
-response_leest = ["Civic", "nmax", "GSX-r", "ninja400", "vios", "mirage"]
+# chat_leest = ["Honda", "yamaha", "suzuki", "kawasaki", "Toyota","Mitsubishi"] 
+# response_leest = ["Civic", "nmax", "GSX-r", "ninja400", "vios", "mirage"]
 
 def botanswer(q):
     process_text = tf_vec.transform([q]).toarray()
@@ -281,7 +281,7 @@ def botanswer(q):
 
     if prob[max_] <= 0.6: #Only 60% and above accurate
         response_list.append("Sorry, I don't have much information about your query...")
-        return "Sorry I am not getting you...!"
+        # return "Sorry I am not getting you...!"         turned this off
     else:
         response_list.append(response_dict[rnn.classes_[max_]])
         return response_dict[rnn.classes_[max_]]
@@ -299,8 +299,8 @@ def add_todo():
 
 @app.route("/")
 def home():
-    return render_template('index.html',todos=chat_leest, responses=response_leest, zip=zip)
-    # return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
+    # return render_template('index.html',todos=chat_leest, responses=response_leest, zip=zip)
+    return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
 
 if __name__ == '__main__':
   app.run(debug=True)
