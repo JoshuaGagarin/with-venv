@@ -288,7 +288,7 @@ def add_todo():
         botanswer(task)
     return jsonify({'status': 'success'})
 
-print (chat_list)
+print(chat_list)
 print("hello")
 
 @app.route("/")
