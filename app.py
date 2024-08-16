@@ -282,8 +282,12 @@ def botanswer(q):
     if prob[max_] <= 0.6: #Only 60% and above accurate
         response_list.append("Sorry, I don't have much information about your query...")
         # return "Sorry I am not getting you...!"         turned this off
+        print(chat_list)
+        print(response_list)
     else:
         response_list.append(response_dict[rnn.classes_[max_]])
+        print(chat_list)
+        print(response_list)
         return response_dict[rnn.classes_[max_]]
 
 
@@ -295,8 +299,6 @@ def add_todo():
     if task:
         chat_list.append(task)
         botanswer(task)
-        print(chat_list)
-        print(response_list)
     return jsonify({'status': 'success'})
 
 @app.route("/")
