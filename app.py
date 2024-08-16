@@ -239,7 +239,6 @@ response_dict =  ( # (response[0])
 )
 
 chat_list = []
-print("hello")
 response_list = []
 app = Flask(__name__)
 
@@ -288,6 +287,9 @@ def add_todo():
         chat_list.append(task)
         botanswer(task)
     return jsonify({'status': 'success'})
+
+print (chat_list)
+print(response_list)
 
 @app.route("/")
 def home():
