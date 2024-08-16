@@ -61,7 +61,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
             newTaskItem.classList.add('task');
             newTaskItem.textContent = taskInput;
             taskList.appendChild(newTaskItem)
-            // location.reload(); # this is supposed to be on
+            location.reload(); 
             // window.location.href = "/";
             
         }
