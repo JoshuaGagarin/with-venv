@@ -275,7 +275,6 @@ response_list = []
 # response_leest = ["Civic", "nmax", "GSX-r", "ninja400", "vios", "mirage"]
 
 def botanswer(q):
-    print(q) # for testing only
     process_text = tf_vec.transform([q]).toarray()
     prob = rnn.predict_proba(process_text)[0]
     max_ = np.argmax(prob)
@@ -294,6 +293,7 @@ def add_todo():
     if task:
         chat_list.append(task) 
         botanswer(task)
+        print(response_list)
     return jsonify({'status': 'success'})
 
 @app.route("/")
