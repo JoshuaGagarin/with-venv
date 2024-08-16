@@ -62,7 +62,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
             newTaskItem.textContent = taskInput;
             taskList.appendChild(newTaskItem)
             location.reload();
-            window.location.href = "/";
+            // window.location.href = "/";
             
         }
     })
