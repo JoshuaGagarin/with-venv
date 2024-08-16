@@ -62,9 +62,10 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
             newTaskItem.classList.add('task');
             newTaskItem.textContent = taskInput;
             taskList.appendChild(newTaskItem);
+            console.log(newTaskItem)
             // document.getElementById('taskInput').value = ''; // Clear input field
-            window.location.href = "/";
-            // location.reload(); ----
+            // window.location.href = "/";
+            location.reload(); 
             // scrollToBottom();
 
             // localStorage.setItem('isActive', 'true');
