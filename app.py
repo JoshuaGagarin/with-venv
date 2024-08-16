@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import numpy as np
+import time
 
 chat_data = (  #(data[0])
     {
@@ -283,12 +284,16 @@ def botanswer(q):
         response_list.append(response_dict[rnn.classes_[max_]])
         return response_dict[rnn.classes_[max_]]
 
+
+  
+
 @app.route('/add', methods=['POST'])
 def add_todo():
     task = request.form.get('task')
     if task:
         chat_list.append(task)
         botanswer(task)
+        time.sleep(3)
     return jsonify({'status': 'success'})
 
 @app.route("/")
