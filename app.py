@@ -293,7 +293,6 @@ print(response_list)
 
 @app.route("/")
 def home():
-    print("World")
     return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
 
 if __name__ == '__main__':
