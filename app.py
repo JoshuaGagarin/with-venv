@@ -292,6 +292,7 @@ def add_todo():
     task = request.form.get('task')
     if task:
         chat_list.append(task)
+        print(chat_list)
         # botanswer(task) # turned this off 
         return jsonify({'status': 'success'}) #should be aligned in "if"
 
