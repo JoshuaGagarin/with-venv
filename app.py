@@ -238,8 +238,8 @@ response_dict =  ( # (response[0])
 }
 )
 
-chat_list = []
-response_list = []
+# chat_list = [] moved below
+# response_list = []
 app = Flask(__name__)
 
 training_dict = {}
@@ -267,6 +267,9 @@ from sklearn.ensemble import RandomForestClassifier
 # Fitting model
 rnn = RandomForestClassifier(n_estimators=200)
 rnn.fit(X, y)
+
+chat_list = []
+response_list = []
 
 def botanswer(q):
     process_text = tf_vec.transform([q]).toarray()
