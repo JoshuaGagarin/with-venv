@@ -299,6 +299,8 @@ def add_todo():
 
 @app.route("/")
 def home():
+    print(chat_list)
+    print(response_list)
     # return render_template('index.html',todos=chat_leest, responses=response_leest, zip=zip)
     return render_template('index.html',todos=chat_list, responses=response_list, zip=zip)
 
