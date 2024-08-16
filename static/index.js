@@ -68,7 +68,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
             }
             
             // Delay the execution of sayHello by 2 seconds (2000 milliseconds)
-            reload(sayHello, 2000);
+            setTimeout(reload, 2000);
             
             // scrollToBottom();
 
