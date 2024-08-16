@@ -63,7 +63,8 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
             newTaskItem.textContent = taskInput;
             taskList.appendChild(newTaskItem);
             // document.getElementById('taskInput').value = ''; // Clear input field
-            location.reload();
+            window.location.href = "/";
+            // location.reload(); ----
             // scrollToBottom();
 
             // localStorage.setItem('isActive', 'true');
