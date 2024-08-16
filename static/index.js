@@ -61,18 +61,9 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
             newTaskItem.classList.add('task');
             newTaskItem.textContent = taskInput;
             taskList.appendChild(newTaskItem)
-            // document.getElementById('taskInput').value = ''; // Clear input field
-            // winocadow.ltion.href = "/";
-            function reload() {
-                location.reload(); 
-            }
+            // location.reload();
+            window.location.href = "/";
             
-            // Delay the execution of sayHello by 2 seconds (2000 milliseconds)
-            setTimeout(reload, 2000);
-            
-            // scrollToBottom();
-
-            // localStorage.setItem('isActive', 'true');
         }
     })
     .catch(error => console.error('Error:', error));
